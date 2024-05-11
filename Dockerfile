@@ -6,7 +6,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /Advance-File-Share-Bot
-WORKDIR /Advance-File-Share-Bot
+RUN mkdir /💖 𝙷𝚊𝚌𝚔𝙼𝚘𝚍𝚜𝙰𝚙𝚔𝟷 💖 File Store
+WORKDIR /💖 𝙷𝚊𝚌𝚔𝙼𝚘𝚍𝚜𝙰𝚙𝚔𝟷 💖 File Store
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
