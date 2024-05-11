@@ -19,7 +19,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "6572768571:AAGQdaF8ofOCx5bG4D8j_98waODHgoP
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://te.legra.ph/file/119729ea3cdce4fefb6a1.jpg')).split()
+PICS = (environ.get('PICS', 'https://te.legra.ph/file/ced7c7ef4f6558f01ebf9.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5827445104').split()]
@@ -48,7 +48,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'VJ_Bot_Disscussion')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", """<b>ɴᴀᴍᴇ: <code>{file_name}</code> \n\nJᴏɪɴ Nᴏᴡ: [⚡ VJ Bots⚡](https://t.me/VJ_Bots)</b>""")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", """<b>ɴᴀᴍᴇ: <code>{file_name}</code> \n\nJᴏɪɴ Nᴏᴡ: [⚡ VJ Bots⚡](https://t.me/+McozUjoaWYM0NDk1)</b>""")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Query: {query}</b> \n‌‌‌‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
